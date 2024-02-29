@@ -28,7 +28,7 @@ export default function Index({ auth }) {
                     ></textarea>
                     <InputError message={errors.message} className="mt-2" />
                     <PrimaryButton className="mt-4" disabled={processing}>
-                        Chirp
+                        Submit
                     </PrimaryButton>
                 </form>
             </div>
