@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Dropdown from "@/Components/Dropdown";
 import InputError from "@/Components/InputError";
 import PrimaryButton from "@/Components/PrimaryButton";
-import { useForm, usePage } from "@inertiajs/react";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import { useForm, usePage } from "@inertiajs/react";
+
+dayjs.extend(relativeTime);
 
 export default function Chirp({ chirp }) {
-    dayjs.extend(relativeTime);
-
     const { auth } = usePage().props;
 
     const [editing, setEditing] = useState(false);
