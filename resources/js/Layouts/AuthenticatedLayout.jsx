@@ -34,6 +34,9 @@ export default function Authenticated({ user, header, children }) {
                                 >
                                     Chirps
                                 </NavLink>
+                                <NavLink>Generate ID</NavLink>
+                                <NavLink>List of ID's</NavLink>
+                                <NavLink>Upload Template</NavLink>
                             </div>
                         </div>
 
